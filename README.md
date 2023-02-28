@@ -16,18 +16,23 @@
 
 # How to setup
 1. Download the 'build.zip' file from the release [page](https://github.com/bestcolour/Python-Whatsappbot/releases/tag/future-unknown-release)
+<br/>
 <img src="images/setup/release-page.PNG" width="55%" height="55%">
 <br/>
 2. Extract the files and go to dist > main > main.exe and open the exe, feel free to create a shortcut for this.
+<br/>
 <img src="images/setup/find-exe.PNG" width="55%" height="55%">
 <br/>
 3. Once opened, you will see a console pop up. Give it a few seconds to open whatsapp web on the Firefox browser.
+<br/>
 <img src="images/setup/open-console.PNG" width="55%" height="55%">
 <br/>
 4. Scan the QR code on your phone tied to your whatsapp account.
+<br/>
 <img src="images/setup/qr-code.PNG" width="55%" height="55%">
 <br/>
 5. Wait for the whatsapp web to finish loading before pressing "Enter" on the console
+<br/>
 <img src="images/setup/pressing-enter.PNG" width="55%" height="55%">
 
 <br/>
@@ -43,6 +48,7 @@ There will be two ways to interact with the bot.
 # Interact through Whatsapp
 Now, to interact with the bot, you must first add it's number into a group chat of yours.
 Once added, type '~help' to see a list of commands that the bot can perform.
+<br/>
 <img src="images/whatsapp-commands/help.PNG" width="55%" height="55%">
 
 <br/>
