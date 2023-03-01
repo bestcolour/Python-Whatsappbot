@@ -74,7 +74,55 @@ or
 <br/> 
 Keywords are interchangeable in position except for '~send' and 'msg:'. They must be at the front and end respectively.
 
-##
+### "at" keyword
+"at" tells the bot what time to send the message.
+
+
+```
+at <time>
+
+For example:
+at 11.30pm
+at 2359
+at 8am
+
+If "at" is not used, the time will be set to the current time
+```
+<br/>
+<br/>
+### "on" keyword
+The "on" keyword tells the bot which date to send the message on.
+
+
+```
+on <date>
+
+For example:
+on 11/11/2023
+on 11/11/23
+on 111123
+
+If "on" is not used, the date will be set to the current day
+```
+<br/>
+<br/>
+### "every" keyword
+The "every" keyword is used to tell the bot to repeatedly send the message at a fixed interval.
+
+```
+every <interval>
+
+For example:
+every 1m (every 1 minute)
+every 1h (every 1 hour)
+every 1d (every 1 day)
+every 1m 1h (every 1 minute and 1 hr)
+every 1m 1h 1d (every 1 minute 1 hr and 1 day)
+
+If "every" is not used then there will be not repeated sending of message
+```
+
+
 
 
 
