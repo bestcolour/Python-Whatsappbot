@@ -159,13 +159,13 @@ The "~remove" command is used to remove any pending commands that you previously
  # Interact through Console
  Now you can also interact with the bot through the console to use more features, simply type 'help' to get started.
  <br/>
- <img src="images/console-commands/help.PNG" width="55%" height="55%">
+ <img src="images/console-commands/help.PNG" width="70%" height="70%">
  <br/>
 
  # Send Console Command
  Sending in the console is a lot different from that on whatsapp. You could choose who/where to send the message to.
  <br/>
- <img src="images/console-commands/send.PNG" width="55%" height="55%">
+ <img src="images/console-commands/send.PNG" width="70%" height="70%">
  <br/>
  <br/>
  
@@ -193,7 +193,7 @@ The "~remove" command is used to remove any pending commands that you previously
  # Remove Console Command
  This is the the '~remove' command equivalent from whatsapp web.
  <br/>
- <img src="images/console-commands/remove-og.PNG" width="55%" height="55%">
+ <img src="images/console-commands/remove-og.PNG" width="70%" height="70%">
  <br/>
  Similar to "~remove", just give the ID of the command you want to remove and it will be done.
  
@@ -201,13 +201,13 @@ The "~remove" command is used to remove any pending commands that you previously
  # List Console Command
  This is the the '~list' command equivalent from whatsapp web. Simply type "print og" to see all of the pending commands from all chats.
  <br/>
- <img src="images/console-commands/print-og.PNG" width="55%" height="55%">
+ <img src="images/console-commands/print-og.PNG" width="70%" height="70%">
  <br/>
 
  # Save Console Command
  When 'save og' is called, every pending command from every chat will be saved into a file called "data.json".
  <br/>
- <img src="images/console-commands/save-og.PNG" width="55%" height="55%">
+ <img src="images/console-commands/save-og.PNG" width="70%" height="70%">
  <img src="images/console-commands/data-json.PNG" width="55%" height="55%">
  <br/>
  This data.json will be read by the bot and loaded into it everytime the exe is opened in order to allow the pending commands to persist.
@@ -215,43 +215,43 @@ The "~remove" command is used to remove any pending commands that you previously
  # Settings Console Command
  There are various settings which could be changed for the bot.
  <br/>
- <img src="images/console-commands/settings.PNG" width="55%" height="55%">
+ <img src="images/console-commands/settings.PNG" width="70%" height="70%">
  <br/>
  <br/>
 ## Time Zone - Console Settings
 For the full list of a available timezones, click [here](https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568)
 <br/>
-<img src="images/console-commands/timezone.PNG" width="55%" height="55%">
+<img src="images/console-commands/timezone.PNG" width="70%" height="70%">
 <br/>
 
 ## Group Search Pause - Console Settings
 This is the duration (in seconds) that the bot waits for while searching for the group chat to select. If your device is slow, it would be better to increase this value.
 <br/>
-<img src="images/console-commands/grp-chat-search-pause.PNG" width="55%" height="55%">
+<img src="images/console-commands/grp-chat-search-pause.PNG" width="70%" height="70%">
 
 
 ## Convo Input Pause - Console Settings
 This is the duration (in seconds) that the bot waits before typing the message to send to the chat. A higher value is better for longer messages as it will allow the long text to be properly loaded into the conversation input box.
 <br/>
-<img src="images/console-commands/convo-input-pause.PNG" width="55%" height="55%">
+<img src="images/console-commands/convo-input-pause.PNG" width="70%" height="70%">
 
 
 ## Message New Number Pause - Console Settings
 This is the duration (in seconds) that the bot waits for before typing the message to send to the chat loading the webpage to message an unknown phone number. A higher value is better for slower connections which lets the bot type the message in time.
 <br/>
-<img src="images/console-commands/msg-new-num-pause.PNG" width="55%" height="55%">
+<img src="images/console-commands/msg-new-num-pause.PNG" width="70%" height="70%">
 
 
 ## Auto Save Frequency - Console Settings
 The interval (in seconds) that the bot saves all the pending commands automatically. 
 <br/>
-<img src="images/console-commands/auto-save-freq.PNG" width="55%" height="55%">
+<img src="images/console-commands/auto-save-freq.PNG" width="70%" height="70%">
 
 
 ## Save when a command is complete - Console Settings
 Tells the bot to whether to save when a command is executed. Set the value to "1" to represent "True" or "0" to represent "False"
 <br/>
-<img src="images/console-commands/save-when.PNG" width="55%" height="55%">
+<img src="images/console-commands/save-when.PNG" width="70%" height="70%">
 
 
 ## Admin Numbers - Console Settings
@@ -264,7 +264,7 @@ Example:
 ```
 
 <br/>
-<img src="images/console-commands/admin.PNG" width="55%" height="55%">
+<img src="images/console-commands/admin.PNG" width="70%" height="70%">
 
 
 
@@ -272,7 +272,7 @@ Example:
 The number of attempts the bot will carry through to execute a command before the command is automatically removed from its system.
 
 <br/>
-<img src="images/console-commands/auto-remove-num.PNG" width="55%" height="55%">
+<img src="images/console-commands/auto-remove-num.PNG" width="70%" height="70%">
 
 
 
@@ -280,7 +280,7 @@ The number of attempts the bot will carry through to execute a command before th
 The symbol that identifies a message as a potential command to the bot. It is best to set it to a non-alphanumeric single character.
 
 <br/>
-<img src="images/console-commands/cmd-ident.PNG" width="55%" height="55%">
+<img src="images/console-commands/cmd-ident.PNG" width="70%" height="70%">
 
 
 
