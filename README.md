@@ -14,6 +14,15 @@
   - [List](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#list-console-command)
   - [Save](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#save-console-command)
   - [Settings](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#settings-console-command)
+    - [Timezone]()
+    - [Group Chat Search Pause]()
+    - [Conversation Input Pause]()
+    - [Message New Number Pause]()
+    - [Auto Save Frequency]()
+    - [Save When A Command Is Done]()
+    - [Admin Numbers]()
+    - [Max Tries Before Auto Removal]()
+    - [Command Identifier]()
  
 # Requirements
 - Firefox browser installed on the device you are going to let the bot run on
@@ -204,4 +213,76 @@ The "~remove" command is used to remove any pending commands that you previously
  <br/>
  <img src="images/console-commands/settings.PNG" width="55%" height="55%">
  <br/>
+ <br/>
+## Time Zone - Console Settings
+For the full list of a available timezones, click [here](https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568)
+<br/>
+<img src="images/console-commands/timezone.PNG" width="55%" height="55%">
+<br/>
+
+## Group Search Pause - Console Settings
+This is the duration (in seconds) that the bot waits for while searching for the group chat to select. If your device is slow, it would be better to increase this value.
+<br/>
+<img src="images/console-commands/grp-chat-search-pause.PNG" width="55%" height="55%">
+
+
+## Convo Input Pause - Console Settings
+This is the duration (in seconds) that the bot waits before typing the message to send to the chat. A higher value is better for longer messages as it will allow the long text to be properly loaded into the conversation input box.
+<br/>
+<img src="images/console-commands/convo-input-pause.PNG" width="55%" height="55%">
+
+
+## Message New Number Pause - Console Settings
+This is the duration (in seconds) that the bot waits for before typing the message to send to the chat loading the webpage to message an unknown phone number. A higher value is better for slower connections which lets the bot type the message in time.
+<br/>
+<img src="images/console-commands/msg-new-num-pause.PNG" width="55%" height="55%">
+
+
+## Auto Save Frequency - Console Settings
+The interval (in seconds) that the bot saves all the pending commands automatically. 
+<br/>
+<img src="images/console-commands/auto-save-freq.PNG" width="55%" height="55%">
+
+
+## Save when a command is complete - Console Settings
+Tells the bot to whether to save when a command is executed. Set the value to "1" to represent "True" or "0" to represent "False"
+<br/>
+<img src="images/console-commands/save-when.PNG" width="55%" height="55%">
+
+
+## Admin Numbers - Console Settings
+The list that lets the bot recognise users with admin privileges. Admin users can access more features on the bot. 
+```
+Set the new value by typing the phone numbers or contact name (separated by ',')
+Example:
+- +6591234567, +6597654321
+- Dad,Mum (Contacts need to be named the same as the input value on the phone the bot is using)
+```
+
+<br/>
+<img src="images/console-commands/admin.PNG" width="55%" height="55%">
+
+
+
+## Auto Remove Tries - Console Settings
+The number of attempts the bot will carry through to execute a command before the command is automatically removed from its system.
+
+<br/>
+<img src="images/console-commands/auto-remove-num.PNG" width="55%" height="55%">
+
+
+
+## Command Identifier - Console Settings
+The symbol that identifies a message as a potential command to the bot. It is best to set it to a non-alphanumeric single character.
+
+<br/>
+<img src="images/console-commands/cmd-ident.PNG" width="55%" height="55%">
+
+
+
+
+
+
+
+
 
