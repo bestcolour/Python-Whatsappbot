@@ -135,9 +135,9 @@ bot_settings_dict = {
 "MAX_NUM_OF_TRIES_B4_CMD_REMOVES_ITSELF_C":"The number of attempts the bot will try to execute a command before it automatically removes itself from the system\n\nDefault value is 3",
 "MAX_NUM_OF_TRIES_B4_CMD_REMOVES_ITSELF_T":"int",
 
-"COMMAND_IDENTIFIER" : '~',
+"COMMAND_IDENTIFIER" : "~",
 "COMMAND_IDENTIFIER_C":"The character that needs to be in front of a command when typed in the whatsapp group in order for the bot to detect it.",
-"COMMAND_IDENTIFIER_T":"chr"
+"COMMAND_IDENTIFIER_T":"str"
 }
 
 #endregion

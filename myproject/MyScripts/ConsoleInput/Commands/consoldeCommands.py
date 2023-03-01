@@ -7,6 +7,7 @@ from MyScripts.DetectExtractAndProcess.botCommandsLibrary import get_command, ch
 import settings
 import phonenumbers
 import pytz
+from MyScripts.DetectExtractAndProcess.botCommandsLibrary import setup_cmd_lib
 
 def exit_program():
     '''To call this command type 'exit'
@@ -149,6 +150,10 @@ def change_settings():
                 else:
                     index = []
                 settings.set(key= key,value= index)
+
+            case "COMMAND_IDENTIFIER":
+                settings.set(key= key,value= index)
+                setup_cmd_lib()
             case _:
                 settings.set(key= key,value= index)
 

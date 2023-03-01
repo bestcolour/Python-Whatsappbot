@@ -12,12 +12,21 @@ from .Commands.listCommand import listOnGoing_Command as listOnGoingCmd
 import settings
 # endregion
 
-command_library = {
-    settings.get("COMMAND_IDENTIFIER")+"help": help,
-    settings.get("COMMAND_IDENTIFIER")+"send": sendMessageToGroup,
-    settings.get("COMMAND_IDENTIFIER")+"remove": removeCommand,
-    settings.get("COMMAND_IDENTIFIER")+"list":listOnGoingCmd
-}
+command_library = {}
+
+def setup_cmd_lib():
+    global command_library
+    command_library = {
+        settings.get("COMMAND_IDENTIFIER")+"help": help,
+        settings.get("COMMAND_IDENTIFIER")+"send": sendMessageToGroup,
+        settings.get("COMMAND_IDENTIFIER")+"remove": removeCommand,
+        settings.get("COMMAND_IDENTIFIER")+"list":listOnGoingCmd
+    }
+    print(command_library)
+
+
+setup_cmd_lib()
+
 
 
 def check_if_is_command(message):
@@ -33,6 +42,7 @@ def get_command(groupChatName,msg):
     '''
     \nRead the msg and check if there are the correct keywords in it. If so, then instantiates a base task class and returns it.
     '''
+    global command_library
     # find the first word of the msg 
     cmdType = []
     for char in msg:
@@ -64,6 +74,7 @@ def load_command(cmdDataDict):
     \nLoads a command instance using json data. Returns the instantiated command.
     '''
     # find the first word of the msg 
+    global command_library
     cmdType = []
     for char in cmdDataDict["msg"]:
         if char == ' ':
