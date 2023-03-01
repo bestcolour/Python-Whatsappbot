@@ -2,14 +2,31 @@
  A whatsapp bot written in python to help send scheduled messages to a group or phone number.
  
 # Content Table 
-- [Requirements](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#requirements)
-- [How to setup](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#how-to-setup)
-- [How to use bot (Whatsapp)](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#interact-through-whatsapp)
-  - [Send](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#send-command)
-  - [Remove](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#remove-command)
-  - [List](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#list-command)
-- [How to use bot (Console)](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#interact-through-console)
-
+- [Requirements](https://github.com/bestcolour/Python-Whatsappbot#requirements)
+- [How to setup](https://github.com/bestcolour/Python-Whatsappbot#how-to-setup)
+- [How to use bot (Whatsapp)](https://github.com/bestcolour/Python-Whatsappbot#interact-through-whatsapp)
+  - [Send](https://github.com/bestcolour/Python-Whatsappbot#send-command)
+    - [Keywords](https://github.com/bestcolour/Python-Whatsappbot#keywords)
+    - ["at"](https://github.com/bestcolour/Python-Whatsappbot#at-keyword)
+    - ["on"](https://github.com/bestcolour/Python-Whatsappbot#on-keyword)
+    - ["every"](https://github.com/bestcolour/Python-Whatsappbot#every-keyword)
+  - [Remove](https://github.com/bestcolour/Python-Whatsappbot#remove-command)
+  - [List](https://github.com/bestcolour/Python-Whatsappbot#list-command)
+- [How to use bot (Console)](https://github.com/bestcolour/Python-Whatsappbot#interact-through-console)
+  - [Send](https://github.com/bestcolour/Python-Whatsappbot#send-console-command)
+  - [Remove](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#remove-console-command)
+  - [List](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#list-console-command)
+  - [Save](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#save-console-command)
+  - [Settings](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#settings-console-command)
+    - [Timezone](https://github.com/bestcolour/Python-Whatsappbot#time-zone---console-settings)
+    - [Group Chat Search Pause](https://github.com/bestcolour/Python-Whatsappbot#group-search-pause---console-settings)
+    - [Conversation Input Pause](https://github.com/bestcolour/Python-Whatsappbot#convo-input-pause---console-settings)
+    - [Message New Number Pause](https://github.com/bestcolour/Python-Whatsappbot#message-new-number-pause---console-settings)
+    - [Auto Save Frequency](https://github.com/bestcolour/Python-Whatsappbot#auto-save-frequency---console-settings)
+    - [Save When A Command Is Done](https://github.com/bestcolour/Python-Whatsappbot#save-when-a-command-is-complete---console-settings)
+    - [Admin Numbers](https://github.com/bestcolour/Python-Whatsappbot#admin-numbers---console-settings)
+    - [Max Tries Before Auto Removal](https://github.com/bestcolour/Python-Whatsappbot#auto-remove-tries---console-settings)
+    - [Command Identifier](https://github.com/bestcolour/Python-Whatsappbot#command-identifier---console-settings)
  
 # Requirements
 - Firefox browser installed on the device you are going to let the bot run on
@@ -166,10 +183,13 @@ The "~remove" command is used to remove any pending commands that you previously
  ```
  <br/> 
  <br/>
- Once you decided who you want to send to, simply type as if you are typing in whatsapp web
+ 
  ```
  send at 11pm on 12/2/2024 msg:Happy birthday!
  ```
+ Once you decided who you want to send to, simply type as if you are typing in whatsapp web
+ 
+ 
  # Remove Console Command
  This is the the '~remove' command equivalent from whatsapp web.
  <br/>
@@ -192,9 +212,81 @@ The "~remove" command is used to remove any pending commands that you previously
  <br/>
  This data.json will be read by the bot and loaded into it everytime the exe is opened in order to allow the pending commands to persist.
  
- # Setting Console Command
+ # Settings Console Command
  There are various settings which could be changed for the bot.
  <br/>
  <img src="images/console-commands/settings.PNG" width="55%" height="55%">
  <br/>
+ <br/>
+## Time Zone - Console Settings
+For the full list of a available timezones, click [here](https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568)
+<br/>
+<img src="images/console-commands/timezone.PNG" width="55%" height="55%">
+<br/>
+
+## Group Search Pause - Console Settings
+This is the duration (in seconds) that the bot waits for while searching for the group chat to select. If your device is slow, it would be better to increase this value.
+<br/>
+<img src="images/console-commands/grp-chat-search-pause.PNG" width="55%" height="55%">
+
+
+## Convo Input Pause - Console Settings
+This is the duration (in seconds) that the bot waits before typing the message to send to the chat. A higher value is better for longer messages as it will allow the long text to be properly loaded into the conversation input box.
+<br/>
+<img src="images/console-commands/convo-input-pause.PNG" width="55%" height="55%">
+
+
+## Message New Number Pause - Console Settings
+This is the duration (in seconds) that the bot waits for before typing the message to send to the chat loading the webpage to message an unknown phone number. A higher value is better for slower connections which lets the bot type the message in time.
+<br/>
+<img src="images/console-commands/msg-new-num-pause.PNG" width="55%" height="55%">
+
+
+## Auto Save Frequency - Console Settings
+The interval (in seconds) that the bot saves all the pending commands automatically. 
+<br/>
+<img src="images/console-commands/auto-save-freq.PNG" width="55%" height="55%">
+
+
+## Save when a command is complete - Console Settings
+Tells the bot to whether to save when a command is executed. Set the value to "1" to represent "True" or "0" to represent "False"
+<br/>
+<img src="images/console-commands/save-when.PNG" width="55%" height="55%">
+
+
+## Admin Numbers - Console Settings
+The list that lets the bot recognise users with admin privileges. Admin users can access more features on the bot. 
+```
+Set the new value by typing the phone numbers or contact name (separated by ',')
+Example:
+- +6591234567, +6597654321
+- Dad,Mum (Contacts need to be named the same as the input value on the phone the bot is using)
+```
+
+<br/>
+<img src="images/console-commands/admin.PNG" width="55%" height="55%">
+
+
+
+## Auto Remove Tries - Console Settings
+The number of attempts the bot will carry through to execute a command before the command is automatically removed from its system.
+
+<br/>
+<img src="images/console-commands/auto-remove-num.PNG" width="55%" height="55%">
+
+
+
+## Command Identifier - Console Settings
+The symbol that identifies a message as a potential command to the bot. It is best to set it to a non-alphanumeric single character.
+
+<br/>
+<img src="images/console-commands/cmd-ident.PNG" width="55%" height="55%">
+
+
+
+
+
+
+
+
 
