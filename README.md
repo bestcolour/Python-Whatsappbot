@@ -1,10 +1,13 @@
 # Whatsapp Message Bot For Personal Use
  A whatsapp bot written in python to help send scheduled messages to a group or phone number.
  
-# Content Table
-- [Requirements](https://github.com/bestcolour/Python-Whatsappbot/edit/main/README.md#requirements)
-- [How to setup](https://github.com/bestcolour/Python-Whatsappbot/edit/main/README.md#how-to-setup)
-- [How to use bot (Whatsapp)](https://github.com/bestcolour/Python-Whatsappbot/edit/main/README.md#interact-through-whatsapp)
+# Content Table 
+- [Requirements](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#requirements)
+- [How to setup](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#how-to-setup)
+- [How to use bot (Whatsapp)](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#interact-through-whatsapp)
+  - [Send](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#send-command)
+  - [Remove](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#remove-command)
+  - [List](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#list-command)
 - [How to use bot (Console)]
 
  
@@ -74,7 +77,70 @@ or
 <br/> 
 Keywords are interchangeable in position except for '~send' and 'msg:'. They must be at the front and end respectively.
 
-##
+### "at" keyword
+"at" tells the bot what time to send the message.
+
+
+```
+at <time>
+
+For example:
+at 11.30pm
+at 2359
+at 8am
+
+If "at" is not used, the time will be set to the current time
+```
+
+### "on" keyword
+The "on" keyword tells the bot which date to send the message on.
+
+
+```
+on <date>
+
+For example:
+on 11/11/2023
+on 11/11/23
+on 111123
+
+If "on" is not used, the date will be set to the current day
+```
+
+### "every" keyword
+The "every" keyword is used to tell the bot to repeatedly send the message at a fixed interval.
+
+```
+every <interval>
+
+For example:
+every 1m (every 1 minute)
+every 1h (every 1 hour)
+every 1d (every 1 day)
+every 1m 1h (every 1 minute and 1 hr)
+every 1m 1h 1d (every 1 minute 1 hr and 1 day)
+
+If "every" is not used then there will be not repeated sending of message
+```
+
+# Remove Command
+The "~remove" command is used to remove any pending commands that you previously had told the bot to do.
+ <br/>
+ <img src="images/whatsapp-commands/remove.PNG" width="55%" height="55%">
+ <br/>
+ <br/>
+ Every you use the "~send" command, an ID will be returned to you. This ID is used to remove that pending command if the need ever rises.
+ 
+ 
+ # List Command
+ The "~list"  command shows all the pending commands, including their ids, in the group chat.
+ <br/>
+ <img src="images/whatsapp-commands/list.PNG" width="55%" height="55%">
+ <br/>
+ 
+ 
+ 
+
 
 
 
