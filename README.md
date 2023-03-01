@@ -1,10 +1,10 @@
 # Whatsapp Message Bot For Personal Use
  A whatsapp bot written in python to help send scheduled messages to a group or phone number.
  
-# Content Table
-- [Requirements](https://github.com/bestcolour/Python-Whatsappbot/edit/main/README.md#requirements)
-- [How to setup](https://github.com/bestcolour/Python-Whatsappbot/edit/main/README.md#how-to-setup)
-- [How to use bot (Whatsapp)](https://github.com/bestcolour/Python-Whatsappbot/edit/main/README.md#interact-through-whatsapp)
+# Content Table 
+- [Requirements](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#requirements)
+- [How to setup](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#how-to-setup)
+- [How to use bot (Whatsapp)](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#interact-through-whatsapp)
 - [How to use bot (Console)]
 
  
