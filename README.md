@@ -9,7 +9,11 @@
   - [Remove](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#remove-command)
   - [List](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#list-command)
 - [How to use bot (Console)](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#interact-through-console)
-
+  - [Send] (https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#send-console-command)
+  - [Remove] (https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#remove-console-command)
+  - [List] (https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#list-console-command)
+  - [Save] (https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#save-console-command)
+  - [Settings] (https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#settings-console-command)
  
 # Requirements
 - Firefox browser installed on the device you are going to let the bot run on
@@ -166,10 +170,13 @@ The "~remove" command is used to remove any pending commands that you previously
  ```
  <br/> 
  <br/>
- Once you decided who you want to send to, simply type as if you are typing in whatsapp web
+ 
  ```
  send at 11pm on 12/2/2024 msg:Happy birthday!
  ```
+ Once you decided who you want to send to, simply type as if you are typing in whatsapp web
+ 
+ 
  # Remove Console Command
  This is the the '~remove' command equivalent from whatsapp web.
  <br/>
@@ -192,7 +199,7 @@ The "~remove" command is used to remove any pending commands that you previously
  <br/>
  This data.json will be read by the bot and loaded into it everytime the exe is opened in order to allow the pending commands to persist.
  
- # Setting Console Command
+ # Settings Console Command
  There are various settings which could be changed for the bot.
  <br/>
  <img src="images/console-commands/settings.PNG" width="55%" height="55%">
