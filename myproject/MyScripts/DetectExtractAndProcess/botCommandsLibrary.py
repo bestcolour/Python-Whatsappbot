@@ -9,14 +9,14 @@ from .clickerFunctions import type_and_send_convo_input
 from .Commands.SendMessage.sendMessageCommands import sendMessageToGroup
 from .Commands.removeCommand import removeCommand
 from .Commands.listCommand import listOnGoing_Command as listOnGoingCmd
+import settings
 # endregion
-COMMAND_IDENTIFIER = '~'
 
 command_library = {
-    COMMAND_IDENTIFIER+"help": help,
-    COMMAND_IDENTIFIER+"send": sendMessageToGroup,
-    COMMAND_IDENTIFIER+"remove": removeCommand,
-    COMMAND_IDENTIFIER+"list":listOnGoingCmd
+    settings.get("COMMAND_IDENTIFIER")+"help": help,
+    settings.get("COMMAND_IDENTIFIER")+"send": sendMessageToGroup,
+    settings.get("COMMAND_IDENTIFIER")+"remove": removeCommand,
+    settings.get("COMMAND_IDENTIFIER")+"list":listOnGoingCmd
 }
 
 
@@ -24,7 +24,7 @@ def check_if_is_command(message):
     '''
     \nChecks if the inputed message has the command identifier as its first character
     '''
-    if (message[0] == COMMAND_IDENTIFIER):
+    if (message[0] == settings.get("COMMAND_IDENTIFIER")):
         return True
     return False
 
@@ -54,7 +54,7 @@ def get_command(groupChatName,msg):
             type_and_send_convo_input(unrecognizedCmd_msg)
             return None
     else:
-        unrecognizedCmd_msg = "\nUnable to find the command '{}'. Type {}help for more information".format(cmdType,COMMAND_IDENTIFIER)
+        unrecognizedCmd_msg = "\nUnable to find the command '{}'. Type {}help for more information".format(cmdType,settings.get("COMMAND_IDENTIFIER"))
         print(unrecognizedCmd_msg)
         type_and_send_convo_input(unrecognizedCmd_msg)
         return None
@@ -85,6 +85,6 @@ def load_command(cmdDataDict):
             print(unrecognizedCmd_msg)
             return None
     else:
-        unrecognizedCmd_msg = "\nUnable to find and load the command type '{}'. Type {}help for more information\nData Dict: \n{}".format(cmdType,COMMAND_IDENTIFIER,cmdDataDict)
+        unrecognizedCmd_msg = "\nUnable to find and load the command type '{}'. Type {}help for more information\nData Dict: \n{}".format(cmdType,settings.get("COMMAND_IDENTIFIER"),cmdDataDict)
         print(unrecognizedCmd_msg)
         return None
