@@ -88,8 +88,7 @@ at 8am
 
 If "at" is not used, the time will be set to the current time
 ```
-<br/>
-<br/>
+
 ### "on" keyword
 The "on" keyword tells the bot which date to send the message on.
 
@@ -104,8 +103,7 @@ on 111123
 
 If "on" is not used, the date will be set to the current day
 ```
-<br/>
-<br/>
+
 ### "every" keyword
 The "every" keyword is used to tell the bot to repeatedly send the message at a fixed interval.
 
