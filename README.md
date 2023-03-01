@@ -145,12 +145,56 @@ The "~remove" command is used to remove any pending commands that you previously
  <img src="images/console-commands/help.PNG" width="55%" height="55%">
  <br/>
 
+ # Send Console Command
+ Sending in the console is a lot different from that on whatsapp. You could choose who/where to send the message to.
+ <br/>
+ <img src="images/console-commands/send.PNG" width="55%" height="55%">
+ <br/>
+ <br/>
+ 
+ The possible inputs for 'Where do you want the message to be sent?':
+ ``` 
+ - <phone number>
+ - <name of group chat>
+ - <contact name> 
+ 
+ For example,
+ - +6591234567
+ - FamilyChat
+ - Dad (Note: the bot is must have the contact added as the same name as the given input)
+ 
+ ```
+ <br/> 
+ <br/>
+ Once you decided who you want to send to, simply type as if you are typing in whatsapp web
+ ```
+ send at 11pm on 12/2/2024 msg:Happy birthday!
+ ```
+ # Remove Console Command
+ This is the the '~remove' command equivalent from whatsapp web.
+ <br/>
+ <img src="images/console-commands/remove-og.PNG" width="55%" height="55%">
+ <br/>
+ Similar to "~remove", just give the ID of the command you want to remove and it will be done.
  
  
+ # List Console Command
+ This is the the '~list' command equivalent from whatsapp web. Simply type "print og" to see all of the pending commands from all chats.
+ <br/>
+ <img src="images/console-commands/print-og.PNG" width="55%" height="55%">
+ <br/>
+
+ # Save Console Command
+ When 'save og' is called, every pending command from every chat will be saved into a file called "data.json".
+ <br/>
+ <img src="images/console-commands/save-og.PNG" width="55%" height="55%">
+ <img src="images/console-commands/data-json.PNG" width="55%" height="55%">
+ <br/>
+ This data.json will be read by the bot and loaded into it everytime the exe is opened in order to allow the pending commands to persist.
  
-
-
-
-
-
+ # Setting Console Command
+ There are various settings which could be changed for the bot.
+ <br/>
+ <img src="images/console-commands/settings.PNG" width="55%" height="55%">
+ <br/>
 
