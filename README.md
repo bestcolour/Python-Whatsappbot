@@ -8,7 +8,7 @@
   - [Send](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#send-command)
   - [Remove](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#remove-command)
   - [List](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#list-command)
-- [How to use bot (Console)]
+- [How to use bot (Console)](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#interact-through-console)
 
  
 # Requirements
@@ -139,8 +139,15 @@ The "~remove" command is used to remove any pending commands that you previously
  <br/>
  
  
- 
+ # Interact through Console
+ Now you can also interact with the bot through the console to use more features, simply type 'help' to get started.
+ <br/>
+ <img src="images/console-commands/help.PNG" width="55%" height="55%">
+ <br/>
 
+ 
+ 
+ 
 
 
 
