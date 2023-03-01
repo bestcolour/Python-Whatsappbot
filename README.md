@@ -9,11 +9,11 @@
   - [Remove](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#remove-command)
   - [List](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#list-command)
 - [How to use bot (Console)](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#interact-through-console)
-  - [Send] (https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#send-console-command)
-  - [Remove] (https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#remove-console-command)
-  - [List] (https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#list-console-command)
-  - [Save] (https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#save-console-command)
-  - [Settings] (https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#settings-console-command)
+  - [Send](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#send-console-command)
+  - [Remove](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#remove-console-command)
+  - [List](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#list-console-command)
+  - [Save](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#save-console-command)
+  - [Settings](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#settings-console-command)
  
 # Requirements
 - Firefox browser installed on the device you are going to let the bot run on
