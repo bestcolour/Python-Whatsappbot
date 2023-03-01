@@ -22,7 +22,6 @@ def setup_cmd_lib():
         settings.get("COMMAND_IDENTIFIER")+"remove": removeCommand,
         settings.get("COMMAND_IDENTIFIER")+"list":listOnGoingCmd
     }
-    print(command_library)
 
 
 setup_cmd_lib()
