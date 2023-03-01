@@ -5,6 +5,9 @@
 - [Requirements](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#requirements)
 - [How to setup](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#how-to-setup)
 - [How to use bot (Whatsapp)](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#interact-through-whatsapp)
+  - [Send](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#send-command)
+  - [Remove](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#remove-command)
+  - [List](https://github.com/bestcolour/Python-Whatsappbot/blob/main/README.md#list-command)
 - [How to use bot (Console)]
 
  
@@ -120,6 +123,23 @@ every 1m 1h 1d (every 1 minute 1 hr and 1 day)
 If "every" is not used then there will be not repeated sending of message
 ```
 
+# Remove Command
+The "~remove" command is used to remove any pending commands that you previously had told the bot to do.
+ <br/>
+ <img src="images/whatsapp-commands/remove.PNG" width="55%" height="55%">
+ <br/>
+ <br/>
+ Every you use the "~send" command, an ID will be returned to you. This ID is used to remove that pending command if the need ever rises.
+ 
+ 
+ # List Command
+ The "~list"  command shows all the pending commands, including their ids, in the group chat.
+ <br/>
+ <img src="images/whatsapp-commands/list.PNG" width="55%" height="55%">
+ <br/>
+ 
+ 
+ 
 
 
 
