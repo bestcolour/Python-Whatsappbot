@@ -245,6 +245,7 @@ class sendMessageToGroup(baseBotCmd):
                 days=self.repeatInterval.day, hours=self.repeatInterval.hour, minutes=self.repeatInterval.minute)
             self.dueDate = now + add
             self.UTC_dueDate = nowUTC + add
+            self.failedNumberOfTimes = 0 # reset failed number of times
             print("New Datetime for '{}':\n{}".format(
                 self.messageToSend, self.dueDate.strftime("%m/%d/%Y, %H:%M")))
             return False
